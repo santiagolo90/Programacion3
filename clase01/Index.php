@@ -1,13 +1,9 @@
 <?php
 
-include "Funciones.php";
 include_once "Funciones.php";
-
-require "Funciones2.php";
 require_once "Funciones2.php";
-
-include "Entidades/Calculadora.php";
-include "Validador/validar.php";
+include_once "Entidades/Calculadora.php";
+include_once "Validador/validar.php";
 
 //require_once solo llama 1 vez
 $calc = new Calculadora();
@@ -18,9 +14,10 @@ Calculadora::Multiplicar(2,5);
 //calc.Multiplicar(2,5);
 Sumar(100,100);
 Restar(100,100);
-
-$vali = new validar();
-$vali->esCero(0);
+echo "<br>";
+Calculadora::Dividir(10,2);
+//$vali = new validar();
+//$vali->esCero(0);
 
 
 

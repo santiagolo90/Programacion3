@@ -2,13 +2,17 @@
 
 class validar
 {
-        function esCero($num)
+    function esCero($num)
+    {
+        if($num == 0)
         {
-                if($num == 0)
-                return true;
-        
+            return true;
         }
-
+        else
+        {
+            return false;
+        }
+    }
 }
 
 ?>
