@@ -1,2 +1,26 @@
+Cargo Datos
 INSERT INTO `provedores`(`Numero`, `Nombre`, `Domicilio`, `Localidad`) VALUES (100,'Perez','Perón 876','Quilmes'),(101,'Gimenez','Mitre 750','Avellaneda'),(102,'Aguirre','Boedo 634','Bernal')
 INSERT INTO `productos`(`pNumero`, `pNombre`, `Precio`, `Tamaño`) VALUES (1,'Caramelos',1.5,'Chico'),(2,'Cigarrillos',45.89 ,'Mediano'),(3,'Gaseosa',15.80 ,'Grande')
+INSERT INTO `envios`(`Numero`, `pNumero`, `Cantidad`) VALUES (100,1,500),(100,2,1500),(100,3,100),(101,2,55),(101,3,225),(102,1,600),(102,3,300)
+
+1-Obtener los detalles completos de todos los productos, ordenados alfabéticamente.
+SELECT * FROM `productos` ORDER BY pNombre ASC
+
+2-Obtener los detalles completos de todos los proveedores de ‘Quilmes’.
+SELECT * FROM `provedores` WHERE Localidad = 'Quilmes'
+
+3-Obtener todos los envíos en los cuales la cantidad este entre 200 y 300 inclusive.
+SELECT * FROM `envios` WHERE Cantidad >= 200 AND Cantidad <= 300
+SELECT * FROM envios WHERE Cantidad BETWEEN 200 and 300
+
+4-Obtener la cantidad total de todos los productos enviados
+SELECT * FROM envios
+
+5-Mostrar los primeros 3 números de productos que se han enviado.
+SELECT * FROM envios LIMIT 0, 3
+
+6-Mostrar los nombres de proveedores y los nombres de los productos enviados.
+SELECT * FROM `envios` as E INNER JOIN `provedores` P WHERE E.Numero = P.Numero
+SELECT P.Nombre, Pr.pNombre FROM `provedores` as P,`productos` as Pr
+
+7-indicar el monto (cantidad * precio) de todos los envíos.

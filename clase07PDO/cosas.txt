@@ -1,0 +1,3 @@
+github octavio ejemplo pdo
+alta baja modificar listar en archivos separados a CD y despues a accesoAdatos
+Clase persona incluye a acceso a datos

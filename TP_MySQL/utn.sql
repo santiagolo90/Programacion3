@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.7.0
+-- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 03-10-2017 a las 02:59:26
--- Versión del servidor: 10.1.19-MariaDB
--- Versión de PHP: 5.6.28
+-- Servidor: localhost
+-- Tiempo de generación: 05-10-2017 a las 21:41:37
+-- Versión del servidor: 10.1.25-MariaDB
+-- Versión de PHP: 7.1.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -31,6 +33,19 @@ CREATE TABLE `envios` (
   `pNumero` int(11) NOT NULL,
   `Cantidad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `envios`
+--
+
+INSERT INTO `envios` (`Numero`, `pNumero`, `Cantidad`) VALUES
+(100, 1, 500),
+(100, 2, 1500),
+(100, 3, 100),
+(101, 2, 55),
+(101, 3, 225),
+(102, 1, 600),
+(102, 3, 300);
 
 -- --------------------------------------------------------
 
@@ -97,6 +112,7 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `provedores`
   ADD PRIMARY KEY (`Numero`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
