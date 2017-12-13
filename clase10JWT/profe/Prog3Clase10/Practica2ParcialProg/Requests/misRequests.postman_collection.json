@@ -1,0 +1,248 @@
+{
+	"variables": [],
+	"info": {
+		"name": "misRequests",
+		"_postman_id": "a8fdea14-8c62-f624-3571-f71e86978f4a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg//usuario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg//usuario/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "Micaela",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "Micaela@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "edad",
+							"value": "24",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "Usuario",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "2468",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg//usuario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg//usuario/",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "16",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg//usuario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg//usuario/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg//usuario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg//usuario/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Pedro",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "asd",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/comentario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/comentario/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "Micaela@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"value": "",
+							"description": "",
+							"type": "file"
+						},
+						{
+							"key": "titulo",
+							"value": "Flores",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "comentario",
+							"value": "UnComentarioInventado",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/usuario/traerid/14",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/usuario/traerid/14",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/usuario/traeremail/asdo",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/usuario/traeremail/asdo",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg//usuario/verificarusuario",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg//usuario/verificarusuario",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "Micaela@hotmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "2468",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/comentario/",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/comentario/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/comentario/traerusuario/Micaela@hotmail.com",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/comentario/traerusuario/Micaela@hotmail.com",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/Practica2ParcialProg/comentario/traertitulo/Flores",
+			"request": {
+				"url": "http://localhost:8080/Practica2ParcialProg/comentario/traertitulo/Flores",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,28 @@
+ejemplos de middleware https://github.com/slimphp/Slim/wiki/Middleware-for-Slim-Framework-v3.x
+tuars.net
+
+estacionado
+*ID
+*Patente
+*Color
+*Foto
+cuando se va 
+*id empl_img
+*fecha/hora/ingreso
+todos no null
+
+no obligatorio(cuando ingresa null)
+*id_emp_salida
+*fecha/hora/Salida
+*importe
+*tiempo transcurrido
+
+
+Emplado
+*id(es id_emp_salida o id empl_img )
+*nombre
+*clave
+*mail
+*turno
+*sexo
+*perfil(usuario o admin)

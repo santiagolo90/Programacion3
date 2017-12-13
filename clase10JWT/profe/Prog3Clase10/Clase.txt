@@ -1,0 +1,11 @@
+Página con info de JWT
+
+https://github.com/firebase/php-jwt
+
+https://jwt.io/
+
+usar el frontEnd de Octavio, modificándolo para que valide el usuario con la base de datos, va una sola vez a la base de datos y luego trabajamos con el token. Usar el MiddleWare para validar el token que vuelve y podemos agregarle a data
+si el usuario es administrador para permitirle o no hacer ciertas cosas.
+Loguearse es una función, verificar que estoy logueado es un Middleware.
+
+Probar como renovar un token que se está por vencer.

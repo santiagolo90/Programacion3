@@ -1,0 +1,5 @@
+frutilla-$10-agua-10KG
+chocolate-$20-crema-20KG
+limon-$30-agua-30KG
+kiwi-$40-agua-40KG
+melon-$50-crema-50KG

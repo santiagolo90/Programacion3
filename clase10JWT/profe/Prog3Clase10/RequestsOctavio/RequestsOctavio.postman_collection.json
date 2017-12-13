@@ -1,0 +1,55 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RequestsOctavio",
+		"_postman_id": "db516c38-d895-f300-6031-5ac2acc8d2cf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/JWT-JQuery-ApiRest-TypeScript-PHP-master/BackEnd-PHP-jwt/api/ingreso/",
+			"request": {
+				"url": "http://localhost:8080/JWT-JQuery-ApiRest-TypeScript-PHP-master/BackEnd-PHP-jwt/api/ingreso/",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "admin@admin.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/JWT-JQuery-ApiRest-TypeScript-PHP-master/BackEnd-PHP-jwt/api/tomarToken/",
+			"request": {
+				"url": "http://localhost:8080/JWT-JQuery-ApiRest-TypeScript-PHP-master/BackEnd-PHP-jwt/api/tomarToken/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "miTokenUTNFRA",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1MTAwMDk5MDYsImV4cCI6MTUxMDAwOTkyNiwiYXVkIjoiYTliZGVmZmQ4ZWQ4N2QyNmZjMDZmYWY5ODFlZTc0YjI5ZDcyOTUzZiIsImRhdGEiOnsidXN1YXJpbyI6ImFkbWluQGFkbWluLmNvbSIsImNsYXZlIjoiMTIzNCJ9LCJhcHAiOiJBUEkgUkVTVCBDRCAyMDE3In0.JYmmFQib8AXLjj3UL7rk9WOIwc9QIFS6APNKPlxSXmk",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

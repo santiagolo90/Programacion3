@@ -1,0 +1,20 @@
+https://xdebug.org/wizard.php
+
+Esto devuelve la p�gina
+Instructions
+
+Download php_xdebug-2.5.4-5.6-vc11.dll
+Move the downloaded file to C:\xampp\php\ext
+Edit C:\xampp\php\php.ini and add the line
+
+*IMPORTANTE: en el zend_extension es importante empezar la ruta con C: ya que aveces la página no lo indica*.
+
+zend_extension = C:\xampp\php\ext\php_xdebug-2.5.4-5.6-vc11.dll
+Restart the webserver
+
+A�adir
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 1
+
+Descargar el plugin php Debug en Visual Studio
+En Visual Studio ir a Archivo->Preferencias->Configuracion, buscar php.validate.executablePath" y pasarle la ruta "C:\\xampp\\php\\php.exe".
